@@ -1,24 +1,26 @@
 {
   "name": "@edumudu/eslint-config",
   "version": "0.0.0",
+  "author": "Eduardo Wesley <eduardomudutiu@gmail.com>",
   "description": "",
   "main": "index.js",
   "packageManager": "pnpm@7.1.7",
+  "homepage": "https://github.com/edumudu/eslint-config#readme",
+  "keywords": [],
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/edumudu/eslint-config.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/edumudu/eslint-config/issues"
   },
-  "homepage": "https://github.com/edumudu/eslint-config#readme",
+  "files": [
+    "vue-ts.js"
+  ],
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",

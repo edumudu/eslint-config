@@ -8,7 +8,7 @@ Install peer dependencies
 ```bash
 pnpm add -D \
     @typescript-eslint/eslint-plugin \
-    @typescript-eslint/parser 
+    @typescript-eslint/parser \
     eslint \
     eslint-config-airbnb-base \
     eslint-config-airbnb-typescript \
@@ -20,10 +20,14 @@ pnpm add -D \
     eslint-plugin-prettier \
     eslint-plugin-testing-library \
     eslint-plugin-vue \
+    prettier \
     typescript
 ```
 
-Extend config
+Extend config and set the project `tsconfig`
 ```js
 extends: '@edumudu/eslint-config/vue-ts',
+parserOptions: {
+  project: './tsconfig.json'
+}
 ```
