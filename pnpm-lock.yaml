@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@commitlint/cli': ^17.0.2
   '@commitlint/config-conventional': ^17.0.2
+  '@semantic-release/git': ^10.0.1
   '@typescript-eslint/eslint-plugin': ^5.27.0
   '@typescript-eslint/parser': ^5.27.0
   eslint: ^8.16.0
@@ -24,6 +25,7 @@ specifiers:
 devDependencies:
   '@commitlint/cli': 17.0.2
   '@commitlint/config-conventional': 17.0.2
+  '@semantic-release/git': 10.0.1_semantic-release@19.0.3
   '@typescript-eslint/eslint-plugin': 5.27.0_dszb5tb7atwkjjijmmov4qhi7i
   '@typescript-eslint/parser': 5.27.0_xztl6dhthcahlo6akmb2bmjmle
   eslint: 8.16.0
@@ -447,6 +449,25 @@ packages:
   /@semantic-release/error/3.0.0:
     resolution: {integrity: sha512-5hiM4Un+tpl4cKw3lV4UgzJj+SmfNIDCLLw0TepzQxz9ZGV5ixnqkzIVF+3tp0ZHgcMKE+VNGHJjEeyFG2dcSw==}
     engines: {node: '>=14.17'}
+    dev: true
+
+  /@semantic-release/git/10.0.1_semantic-release@19.0.3:
+    resolution: {integrity: sha512-eWrx5KguUcU2wUPaO6sfvZI0wPafUKAMNC18aXY4EnNcrZL86dEmpNVnC9uMpGZkmZJ9EfCVJBQx4pV4EMGT1w==}
+    engines: {node: '>=14.17'}
+    peerDependencies:
+      semantic-release: '>=18.0.0'
+    dependencies:
+      '@semantic-release/error': 3.0.0
+      aggregate-error: 3.1.0
+      debug: 4.3.4
+      dir-glob: 3.0.1
+      execa: 5.1.1
+      lodash: 4.17.21
+      micromatch: 4.0.5
+      p-reduce: 2.1.0
+      semantic-release: 19.0.3
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /@semantic-release/github/8.0.4_semantic-release@19.0.3:

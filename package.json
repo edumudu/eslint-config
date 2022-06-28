@@ -1,6 +1,6 @@
 {
   "name": "@edumudu/eslint-config",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "author": "Eduardo Wesley <eduardomudutiu@gmail.com>",
   "description": "",
   "main": "index.js",
@@ -25,6 +25,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
+    "@semantic-release/git": "^10.0.1",
     "@typescript-eslint/eslint-plugin": "^5.27.0",
     "@typescript-eslint/parser": "^5.27.0",
     "eslint": "^8.16.0",
