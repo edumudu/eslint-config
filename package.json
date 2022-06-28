@@ -46,5 +46,8 @@
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
