@@ -1,6 +1,6 @@
 {
   "name": "@edumudu/eslint-config",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "author": "Eduardo Wesley <eduardomudutiu@gmail.com>",
   "description": "",
   "main": "index.js",
@@ -9,11 +9,12 @@
   "keywords": [],
   "license": "MIT",
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "generate:release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edumudu/eslint-config.git"
+    "url": "https://github.com/edumudu/eslint-config.git"
   },
   "bugs": {
     "url": "https://github.com/edumudu/eslint-config/issues"
@@ -38,6 +39,8 @@
     "eslint-plugin-testing-library": "^5.5.1",
     "eslint-plugin-vue": "^9.0.1",
     "husky": "^8.0.1",
+    "prettier": "^2.7.1",
+    "semantic-release": "^19.0.3",
     "typescript": "^4.7.2"
   },
   "lint-staged": {
