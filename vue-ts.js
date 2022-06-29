@@ -128,7 +128,6 @@ module.exports = {
     'vue/no-extra-parens': 'error',
     'vue/no-irregular-whitespace': 'error',
     'vue/no-useless-concat': 'error',
-    'vue/object-curly-spacing': 'error',
     'vue/prefer-template': 'error',
 
     'no-use-before-define': 'off',
