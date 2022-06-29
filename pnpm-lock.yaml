@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@commitlint/cli': ^17.0.2
-  '@commitlint/config-conventional': ^17.0.2
+  '@commitlint/config-angular': ^17.0.3
   '@semantic-release/git': ^10.0.1
   '@typescript-eslint/eslint-plugin': ^5.27.0
   '@typescript-eslint/parser': ^5.27.0
@@ -24,7 +24,7 @@ specifiers:
 
 devDependencies:
   '@commitlint/cli': 17.0.2
-  '@commitlint/config-conventional': 17.0.2
+  '@commitlint/config-angular': 17.0.3
   '@semantic-release/git': 10.0.1_semantic-release@19.0.3
   '@typescript-eslint/eslint-plugin': 5.27.0_dszb5tb7atwkjjijmmov4qhi7i
   '@typescript-eslint/parser': 5.27.0_xztl6dhthcahlo6akmb2bmjmle
@@ -101,11 +101,16 @@ packages:
       - '@swc/wasm'
     dev: true
 
-  /@commitlint/config-conventional/17.0.2:
-    resolution: {integrity: sha512-MfP0I/JbxKkzo+HXWB7B3WstGS4BiniotU3d3xQ9gK8cR0DbeZ4MuyGCWF65YDyrcDTS3WlrJ3ndSPA1pqhoPw==}
+  /@commitlint/config-angular-type-enum/17.0.0:
+    resolution: {integrity: sha512-OJrxpzszJ+jF0RvqLjsM/iZ94IfJ33NVCFFGVmkzuHjKxPt/i/+yJKJ5lzGhlsp5YV2F2Ui5ECIf5Sor2/OZvQ==}
+    engines: {node: '>=v14'}
+    dev: true
+
+  /@commitlint/config-angular/17.0.3:
+    resolution: {integrity: sha512-syeEtOmkLEyrq2VVJxvvtMUYovFCg3QVK818FA6lmUqgi+HtoM5zgm1ZjF6CUgZc4PcyAwfQwRjVtmeQC2yBEA==}
     engines: {node: '>=v14'}
     dependencies:
-      conventional-changelog-conventionalcommits: 5.0.0
+      '@commitlint/config-angular-type-enum': 17.0.0
     dev: true
 
   /@commitlint/config-validator/17.0.0:
@@ -1023,15 +1028,6 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       compare-func: 2.0.0
-      q: 1.5.1
-    dev: true
-
-  /conventional-changelog-conventionalcommits/5.0.0:
-    resolution: {integrity: sha512-lCDbA+ZqVFQGUj7h9QBKoIpLhl8iihkO0nCTyRNzuXtcd7ubODpYB04IFy31JloiJgG0Uovu8ot8oxRzn7Nwtw==}
-    engines: {node: '>=10'}
-    dependencies:
-      compare-func: 2.0.0
-      lodash: 4.17.21
       q: 1.5.1
     dev: true
 
