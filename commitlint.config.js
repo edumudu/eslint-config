@@ -1,3 +1,6 @@
 module.exports = {
-  extends: ['@commitlint/config-angular']
+  extends: ['@commitlint/config-conventional'],
+  ignores: [
+    (message) => message.includes('[skip ci]')
+  ]
 }
