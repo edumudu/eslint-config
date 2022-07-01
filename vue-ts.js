@@ -113,7 +113,6 @@ module.exports = {
     'vue/arrow-spacing': 'error',
     'vue/block-spacing': 'error',
     'vue/brace-style': 'error',
-    'vue/comma-dangle': 'error',
     'vue/comma-spacing': 'error',
     'vue/dot-notation': 'error',
     'vue/eqeqeq': 'error',
