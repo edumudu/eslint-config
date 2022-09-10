@@ -2,7 +2,7 @@
 module.exports = {
   root: true,
   env: {
-    node: true,
+    browser: true,
   },
   extends: [
     'eslint:recommended',
@@ -132,9 +132,15 @@ module.exports = {
     'no-use-before-define': 'off',
     'consistent-return': 'off',
     'import/prefer-default-export': 'off',
-    'import/order': [
-      'error',
-      { groups: [['builtin', 'external', 'internal']], 'newlines-between': 'always' },
+    'import/order': ['error', {
+        'newlines-between': 'always',
+        groups: [
+          "builtin",
+          "external",
+          "internal",
+          ["parent", "sibling", "index"]
+        ],
+      },
     ],
   },
   overrides: [
@@ -147,7 +153,14 @@ module.exports = {
       },
     },
     {
-      files: ['**/*.spec.{j,t}s?(x)', 'vite.config.{j,t}s'],
+      files: [
+        '**/*.spec.{j,t}s?(x)',
+        '{vite,vitest}.config.{j,t}s',
+        'vitest.setup.{j,t}s',
+      ],
+      env: {
+        node: true,
+      },
       rules: {
         'import/no-extraneous-dependencies': 'off',
       },
