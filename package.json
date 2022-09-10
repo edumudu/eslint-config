@@ -1,6 +1,6 @@
 {
   "name": "@edumudu/eslint-config",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "author": "Eduardo Wesley <eduardomudutiu@gmail.com>",
   "description": "",
   "main": "index.js",
